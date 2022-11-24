@@ -6,13 +6,16 @@ from web3 import Web3, HTTPProvider
 
 GRAPH_ENDPOINTS = {
     'polygon': 'https://api.thegraph.com/subgraphs/name/sushiswap/matic-minichef',
-    'xdai': 'https://api.thegraph.com/subgraphs/name/matthewlilley/xdai-minichef',
+    'xdai': 'https://api.thegraph.com/subgraphs/name/jiro-ono/gnosis-minichef-staging',
     'harmony': 'https://sushi.graph.t.hmny.io/subgraphs/name/sushiswap/harmony-minichef',
     'celo': 'https://api.thegraph.com/subgraphs/name/sushiswap/celo-minichef-v2',
     'moonriver': 'https://api.thegraph.com/subgraphs/name/sushiswap/moonriver-minichef',
     'arbitrum': 'https://api.thegraph.com/subgraphs/name/sushiswap/arbitrum-minichef',
     'fantom': 'https://api.thegraph.com/subgraphs/name/sushiswap/fantom-minichef',
     'fuse': 'https://api.thegraph.com/subgraphs/name/sushiswap/fuse-minichef',
+    'metis': 'https://andromeda.thegraph.metis.io/subgraphs/name/sushiswap/metis-minichef',
+    'kava': 'https://pvt.graph.kava.io/subgraphs/name/sushiswap/kava-minichef',
+    'boba': 'https://api.thegraph.com/subgraphs/name/sushiswap/minichef-boba'
 }
 
 RPC_ENDPOINTS = {
@@ -25,6 +28,9 @@ RPC_ENDPOINTS = {
     'arbitrum': 'https://arb1.arbitrum.io/rpc',
     'fantom': 'https://rpcapi.fantom.network',
     'fuse': 'https://rpc.fuse.io',
+    'metis': 'https://andromeda.metis.io/?owner=1088',
+    'kava': 'https://evm.kava.io',
+    'boba': 'https://mainnet.boba.network'
 }
 
 
@@ -36,6 +42,9 @@ COMPLEX_REWADERS = {
     'moonriver': '0x1334c8e873e1cae8467156e2a81d1c8b566b2da1',
     'fantom': '0xeaf76e3bd36680d98d254b378ed706cb0dfbfc1b',
     'fuse': '0xef502259dd5d497d082498912031e027c4515563',
+    'metis': '0xe2d7460457f55e4786c69d2d3fa81978bf8dd11c',
+    'kava': '0xeaf76e3bd36680d98d254b378ed706cb0dfbfc1b',
+    'boba': '0xf731202a3cf7Efa9368c2d7bd613926f7a144db5'
 }
 
 def main(chain):

@@ -7,9 +7,9 @@ from web3 import Web3, HTTPProvider
 
 GRAPH_ENDPOINTS = {
     'polygon': 'https://api.thegraph.com/subgraphs/name/sushiswap/matic-minichef',
-    'xdai': 'https://api.thegraph.com/subgraphs/name/matthewlilley/xdai-minichef',
+    'xdai': 'https://api.thegraph.com/subgraphs/name/matthewlilley/jiro-ono/gnosis-minichef-staging',
     'harmony': 'https://sushi.graph.t.hmny.io/subgraphs/name/sushiswap/harmony-minichef',
-    'celo': 'https://api.thegraph.com/subgraphs/name/sushiswap/celo-minichef',
+    'celo': 'https://api.thegraph.com/subgraphs/name/sushiswap/celo-minichef-v2',
     'moonriver': 'https://api.thegraph.com/subgraphs/name/sushiswap/moonriver-minichef',
     'arbitrum': 'https://api.thegraph.com/subgraphs/name/sushiswap/arbitrum-minichef'
 }
@@ -66,7 +66,6 @@ def main(chain):
         slp_balance = pair_contract.functions.balanceOf(w3.toChecksumAddress(minichef_address)).call()
 
         print(f"pid: {pool['id']}")
-        print(pool_info)
         print(f'Acc Sushi per Share: {pool_info[0] / 1e12}')
         print(f'Balance: {slp_balance / 1e18}')
         print(f"Debt: {(pool_info[0] / 1e12) * (slp_balance / 1e18)}")
